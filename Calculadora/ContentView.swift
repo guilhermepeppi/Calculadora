@@ -14,12 +14,45 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .trailing, spacing: 0) {
             
+            Spacer()
+            
             HStack {
                 Text(result)
                     .padding()
                     .font(.largeTitle)
                     .foregroundColor(.white)
             }
+            
+            HStack {
+                
+                Button("AC"){
+                    
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                
+                
+                Button("+/-"){
+                    
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                
+                
+                Button("%"){
+                    
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                
+                Button("/"){
+                    
+                }
+                .padding(.vertical, 40)
+                .frame(maxWidth: .infinity)
+                .background(Color.orange)
+            }
+            .foregroundColor(.white)
             
             HStack {
                 
@@ -88,14 +121,14 @@ struct ContentView: View {
             HStack {
                 
                 Button("1"){
-                    
+                    result += "1"
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("2"){
-                    
+                    result += "2"
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -149,7 +182,6 @@ struct ContentView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black)
-        .padding() //aaa
     }
 }
 
